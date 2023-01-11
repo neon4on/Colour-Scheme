@@ -1,8 +1,21 @@
 const cols = document.querySelectorAll('.col')
 
-document.addEventListener('keydown', event => {
+document.addEventListener('keydown', (event) => {
     if (event.code.toLocaleLowerCase() == 'space'){
         setRandomColors()
+    }
+})
+
+document.addEventListener('click', (event) => {
+    const type = event.target.dataset.type
+
+    if (type == 'lock') {
+        const node =
+          event.target.tagName.toLowerCase() == 'i'
+            ? event.target 
+            : event.target.children[0]
+
+        console.log(node)
     }
 })
 
