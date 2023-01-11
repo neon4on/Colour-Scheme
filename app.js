@@ -1,5 +1,11 @@
 const cols = document.querySelectorAll('.col')
 
+document.addEventListener('keydown', event => {
+    if (event.code.toLocaleLowerCase() == 'space'){
+        setRandomColors()
+    }
+})
+
 function generateRandomColour(){
     const hexCodes = '0123456789ABCDEF'
     let color = ''
@@ -10,7 +16,7 @@ function generateRandomColour(){
 }
 
 function setRandomColors(){
-    cols.forEach(col =>{
+    cols.forEach(col) =>{
         const text = col.querySelector('h2')
         const button = col.querySelector('button')
         const color = chroma.random()
