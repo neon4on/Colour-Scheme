@@ -4,7 +4,7 @@ Do you have a constant problem with color scheme ideas? I have a solution to thi
 
 Use this website for your work :yum:
 
-Instructions for working with the site:
+#Instructions for working with the site:
 
 -Press the lock to lock the color
 
